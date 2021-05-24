@@ -1,3 +1,5 @@
+
+/* Reset */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,19 +20,33 @@ body {
     font-style: normal;
     font-size: 20px;
     color: var(--primaryfontblue);
+
 }
+
+
+
 
 a {
     text-decoration: none;
 }
 
+/* Reset */
 
-/* menu */
+/* Header */
+
+.header-active{
+    position: absolute;
+    width: 100%;
+}
 
 nav {
+    font-family: 'Montserrat', sans-serif;
     background: var(--bgcolorghost);
-    padding: 0px 10px;
+    padding: 0px 6px;
     list-style-type: none;
+    font-size: 13px;
+    width: 100%;
+    position: fixed;
 }
 
 nav a {
@@ -41,6 +57,11 @@ nav a:hover,
 nav a:hover::after {
     color: var(--hoverfontwhite) !important;
     background-color: var(--primaryfontblue);
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
 }
 
 .menu,
@@ -53,7 +74,7 @@ nav a:hover::after {
 .logo img {
     top: 2.4%;
     width: 15%;
-    position: absolute;
+    position: fixed;
     left: 8%;
 }
 
@@ -76,6 +97,11 @@ nav a:hover::after {
 .item a:hover::after {
     color: var(--hoverfontwhite);
     background-color: var(--primaryfontblue);
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
 }
 
 
@@ -147,6 +173,11 @@ a .menu li.subitem a {
     content: "\f078";
     color: var(--primaryfontblue);
     padding-left: 5px;
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
 }
 
 .subitem a {
@@ -156,7 +187,14 @@ a .menu li.subitem a {
 .submenu-active {
     background-color: var(--overlayblue);
     border-radius: 3px;
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
 }
+
+/* Tablet */
 
 @media all and (min-width: 700px) {
     .menu {
@@ -167,9 +205,9 @@ a .menu li.subitem a {
         order: 0;
     }
     .logo img {
-        top: 1%;
+        top: 1.4%;
         width: 12%;
-        position: absolute;
+        position: fixed;
         left: 5%;
     }
     /* .item.button {
@@ -205,10 +243,13 @@ a .menu li.subitem a {
         background: royalblue;
         border-color: darkblue;
     } */
+    .container{
+        padding: 5rem 4rem 2rem 4rem;
+        }
 }
 
 
-/* Desktop menu */
+/* Desktop*/
 
 @media all and (min-width: 960px) {
     .menu {
@@ -222,7 +263,7 @@ a .menu li.subitem a {
     .logo img {
         top: 1.2%;
         width: 10%;
-        position: absolute;
+        position: fixed;
         left: 5%;
     }
     .item {
@@ -240,11 +281,238 @@ a .menu li.subitem a {
         left: 0;
         top: 68px;
         background: var(--bgcolorghost);
-    }
+        transition: background-color 0.6s ease;
+        -webkit-transition: background-color 0.6s ease;
+        -moz-transition: background-color 0.6s ease;
+        -ms-transition: background-color 0.6s ease;
+        -o-transition: background-color 0.6s ease;
+}
     .toggle {
         display: none;
     }
     .submenu-active {
         border-radius: 0;
     }
+
+    .container{
+        padding: 5rem 3rem 2rem 3rem;
+        }
 }
+/* Header */
+
+
+/* Main-Content */
+main-content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container{
+    padding: 8rem 1.5rem 2rem 1.5rem;
+    justify-content: center;
+    }
+
+/* Main-Content */
+
+
+
+/* footer */
+footer .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media (min-width: 576px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 768px){
+	.container {
+    	max-width: 80%;
+}}
+
+@media (min-width: 992px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 1200px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 1200px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 992px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 768px){
+	.container {
+		max-width: 80%;
+}}
+
+@media (min-width: 576px){
+	.container {
+		max-width: 80%;
+}}
+
+footer h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        footer a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+
+footer ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+      footer  img {
+    max-width: 100%;
+    height: auto;
+}
+footer section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(65deg,#6e99e6 ,#093c94);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: 1.2rem;
+}
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer,
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.single_footer h4::after {
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_footer ul li,
+.single_footer ul li a {
+    color: rgb(248, 248, 255);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer ul li a:hover { color:#015182a8; }
+
+.single_footer_address,
+.single_footer_address ul,
+.single_footer_address ul li{color:var(--bgcolorghost);}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: rgb(248, 248, 255);
+    line-height: 28px;
+}
+ footer.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {margin-top:40px;}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile ul li{float:left;}
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: rgb(248, 248, 255);
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media only screen and (max-width:768px) {
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) {
+.social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+}
+.social_profile ul li a:hover{
+background:#015182a8;
+border: 1px solid #015182a8;
+color:rgb(248, 248, 255);
+border:0px;
+}
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color:rgb(248, 248, 255);
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a:hover{color:#015182a8;}
+/* footer */
